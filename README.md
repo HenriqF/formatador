@@ -1,4 +1,4 @@
-# Formatador de textos:
+# [Formatador de textos](https://henriqf.github.io/formatador/):
 
 Uma extensão simples que permite formatar pequenos trechos de texto rapidamente.<br>
 
@@ -62,3 +62,4 @@ Textos são automaticamente salvos.
 `service-worker.js` é usado para salvar o conteúdo da caixa de input.<br>
 `styles.css` é utilizado para embelezar a extensão.<br>
 `manifest.json` define as configurações da extensão.
+
