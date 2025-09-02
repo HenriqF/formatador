@@ -1,5 +1,5 @@
 //variaveis.
-let modos = ['inverter','binário','texto pequeno','morse','ponta cabeça','demoniado','chave entre letras'];
+let modos = ['inverter','binário','texto pequeno','morse','ponta cabeça','demoniado','chave entre letras','contador'];
 var modo = 0;
 const input = document.getElementById('input');
 const keyinput = document.getElementById('keyinput');
@@ -84,6 +84,24 @@ function aplicarmodo(){
         
         case 'chave entre letras':
             input.value = input.value.split('').join(keyinput.value)
+            break;
+
+        case 'contador':
+            let process = input.value;
+            let linhas = 1
+            let letras = 0
+            let numeros = 0
+            let outros = 0
+            let espacos = 0
+            for (let i =0; i< process.length; i++){
+                const ch = process[i];
+                if ((ch >= "A" && ch <= "Z") || (ch >= "a" && ch <= "z")) letras++;
+                else if ((ch >= "0" && ch <= "9")) numeros++;
+                else if (ch == " ") espacos++;
+                else if (ch == "\n") linhas++;
+                else outros++;
+            }
+            input.value = `letras: ${letras}\ndígitos: ${numeros}\nespaços: ${espacos}\noutros: ${outros}\nlinhas: ${linhas}`
             break;
     }
 }
