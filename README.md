@@ -11,6 +11,7 @@ Modos de uso:
     ponta cabeça        -> faz o texto ficar de ponta cabeça.
     demoniado           -> inefável.
     chave entre letras  -> insere uma chave entre os caracteres.
+    contador            -> conta quantia de caracteres do texto.
 
 
 ## Colocar no Chrome:
@@ -62,4 +63,5 @@ Textos são automaticamente salvos.
 `service-worker.js` é usado para salvar o conteúdo da caixa de input.<br>
 `styles.css` é utilizado para embelezar a extensão.<br>
 `manifest.json` define as configurações da extensão.
+
 
